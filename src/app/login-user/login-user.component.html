@@ -1,0 +1,31 @@
+<div class="container custom-bg">
+<div class="d-flex  justify-content-center mt-5"  >
+<div class="card  form-shadow">
+    <div class="card-heading primary-bg">
+        <!-- <div class="text-center image-size-small img-logo">
+            <img [src]="imglogo" class="rounded-circle p-2 bg-white"> -->
+        <h5 class="text-center mt-3 p-2 ">Sign in</h5>
+    </div>
+    <div class="card-body fs-5 fw-bold" >
+      <form [formGroup]="login_Form" (ngSubmit)="loginSubmission()"  autocomplete="off">
+        <small *ngIf="error_msg" class="error-msg mt-1">Invalid username and password</small> 
+        <div class="mb-3">
+            <label for="username" class="form-label">username</label>
+            <input type="email" class="form-control form-control-lg text-lowercase " formControlName="username" id="email" placeholder="username@gmail.com" required >
+            <small *ngIf="username && username.invalid && username.touched" class="error-msg"> Invalid username </small>
+          </div>
+          
+          <div class="mb-3">
+            <label for="pwd" class="form-label">password</label>
+            <input type="password" class="form-control form-control-lg" id="" formControlName="password" placeholder="****" required>
+            <small *ngIf="password && password.invalid && password.touched" class="error-msg" > Password is required</small>
+          </div>
+          <div class="mb-3 mt-4">
+              <button type="submit" [disabled]="login_Form.invalid" class="btn btn-primary btn-lg w-100 shadow-lg primary-bg">Login</button>
+          </div>      
+      <p >Do not have an account? <span> <a routerLink="/register" class="card-link fs-4">Sign up</a></span></p> 
+    </form>
+    </div>
+  </div>
+</div>
+</div>

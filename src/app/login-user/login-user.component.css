@@ -1,0 +1,37 @@
+.primary-bg{
+    background-color: rgb(17, 97, 86);
+    color: white;
+}
+
+.form-shadow{
+	background-color: rgba(144, 180, 180, 0.226);
+	box-shadow: 20px 20px 40px grey;
+}
+
+.card{
+    width: 40rem; 
+    font-size: large;
+    margin-top: 140px;
+
+}
+
+/* error */
+.error-msg{
+
+	color: rgb(233, 41, 41) ;
+	font-size: large;
+	font-weight: bold;
+}
+
+input.ng-valid{
+	border-left: 5px solid rgba(28, 93, 28, 0.938);
+}
+.image-size-small{
+	width:140px;
+	margin:0 auto;	
+}
+
+.image-size-small img{
+	width:140px;
+	margin-bottom:-80px;	
+}

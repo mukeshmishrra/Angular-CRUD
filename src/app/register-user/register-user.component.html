@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="d-flex  justify-content-center mt-3"  >
+    <div class="card form-shadow">
+        <div class="card-heading primary-bg">
+            <h5 class="text-center p-3 ">Register</h5>
+        </div>
+        <div class="card-body fs-5 fw-bold" >
+          <form [formGroup]="registration_form" (ngSubmit)="onSubmit()" autocomplete="off">
+            <div class="form-group">
+           <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control form-control-lg " id="name" placeholder="Username" formControlName="name" required >
+                <small *ngIf="name && name.invalid && name.touched" class="error-msg">Invalid input user name </small>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control form-control-lg " id="email" placeholder="user email" formControlName="email" required >
+                <small *ngIf="email && email.invalid && email.touched" class="error-msg">Invalid input user email </small>
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label">Password</label>
+                <input type="password" class="form-control form-control-lg" id="" placeholder="Password" formControlName="password" required>
+                <small *ngIf="password && password.invalid && password.touched" class="error-msg">required field </small>
+              </div>
+              <div class="mb-3 mt-4">
+                  <button type="submit" [disabled]="registration_form.invalid" class="btn btn-primary btn-lg w-100 shadow-lg primary-bg">Create an account</button>
+              </div>
+    
+
+            <p>Already Registered? <span> <a href="#" routerLink="/login" class="card-link">Sign in</a></span></p> 
+          </div>
+        </form>  
+        </div>
+      </div>
+    </div>
+    </div>

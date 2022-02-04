@@ -1,0 +1,62 @@
+<div class="container">
+  
+  <div class="d-flex  justify-content-center">
+    <div class="card form-shadow">
+      <div class="card-heading primary-bg">
+        <h5 class="text-center p-3 ">CREATE NEW USER</h5>
+      </div>
+      <div class="card-body fs-5 fw-bold">
+        <form [formGroup]="form" (ngSubmit)="saveData()" autocomplete="off">
+          <div class="form-group">
+                <div class="m-3 fs-5 ">
+                  <small *ngIf="success_message" class="success-msg fw-bold">Record has been added successfully
+                  <span><i class="fa fa-check-circle" style="color:green;"></i></span> &nbsp; Loading Dashboard...  <span class="spinner-border text-success" ></span> </small>
+                </div>
+
+            <div class="mb-3 mt-3">
+              <label for="fname" class="form-label">Fist Name:</label>
+              <input type="text" class="form-control" id="firstname" placeholder="Enter first name" name="firstname"
+                formControlName="firstname" required>
+              <small *ngIf="firstname && firstname.invalid && firstname.touched" class="error-msg">Please enter valid
+                user firstname</small>
+            </div>
+            <div class="mb-3 mt-3">
+              <label for="lname" class="form-label">Last Name:</label>
+              <input type="text" class="form-control" id="lname" placeholder="Enter last name" name="lname"
+                formControlName="lastname" required>
+              <small *ngIf="lastname && lastname.invalid && lastname.touched" class="error-msg">Please enter valid user
+                lastname</small>
+            </div>
+            <div class="mb-3">
+              <label for="mobile" class="form-label">Mobile Number:</label>
+              <input type="text" class="form-control" id="mobile" placeholder="Enter mobile number" name="mobile"
+                formControlName="mobile" required>
+              <small *ngIf="mobile && mobile.invalid && mobile.touched" class="error-msg">Please enter valid mobile
+                number</small>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Id:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email id" name="email"
+                formControlName="email" required>
+              <small *ngIf="email && email.invalid && email.touched" class="error-msg">Please enter valid user
+                email</small>
+            </div>
+
+            <div class="mb-3">
+              <label for="pwd" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter password" name="password"
+                formControlName="password" required>
+              <small *ngIf="password && password.invalid && password.touched" class="error-msg">required field</small>
+            </div>
+
+            <div class="mb-3 mt-4">
+              <button type="submit" [disabled]="form.invalid"
+                class="btn btn-primary btn-lg w-100 shadow-lg primary-bg">Add new user</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

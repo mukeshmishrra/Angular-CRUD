@@ -1,0 +1,43 @@
+<div class="container" style="overflow-x:auto; margin-top: 80px;">
+
+  <div class="container mt-5">
+    <!-- filter search form -->
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="nameSearch">
+  </div>
+  <div class="m-3 fs-5 ">
+    <small *ngIf="delete_success" class="success-msg fw-bold">Record deleted successfully
+      <span><i class="fa fa-check-circle" style="font-size:30px;color:green;"></i></span> </small>
+  </div>
+
+  
+  <table class="table mt-3">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Mobile Number</th>
+        <th scope="col">Email Id</th>
+        <th scope="col">Password</th>
+        <th scope="col" class="text-center">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let items of userData | filter:nameSearch | paginate: { itemsPerPage: 5, currentPage: p }">
+
+        <td>{{ items.id }}</td>
+        <td>{{ items.firstname }}</td>
+        <td>{{ items.lastname }}</td>
+        <td>{{ items.mobile }}</td>
+        <td>{{ items.email }}</td>
+        <td>{{ items.password }}</td>
+        <td class="text-center">
+          <a routerLink="/edit/{{items.id}}" class="btn btn-secondary"> <i class="fa fa-pencil"></i></a>
+          <a class="btn btn-danger ms-4" (click)="deleteUser(items.id)"> <i class="fa fa-trash"></i></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>

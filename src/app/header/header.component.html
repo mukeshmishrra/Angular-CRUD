@@ -1,0 +1,22 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark primary-bg">
+  <h1 class="navbar-brand fs-3 fw-bold "><span style="color: red;">| </span>DATA MANAGEMENT SYSTEM</h1>
+  <button class="navbar-toggler border border-light  border-4" type="button" data-bs-toggle="collapse"
+    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ms-auto fs-5">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" routerLink="add" routerLinkActive="active"
+          [routerLinkActiveOptions]={exact:true}>ADD USER</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="user-dashboard" routerLinkActive="active">USERS LIST</a>
+      </li>
+    </ul>
+    <div class="ms-2">
+      <button class="btn btn-danger" (click)="logout()" type="button">LOGOUT</button>
+    </div>
+  </div>
+</nav>

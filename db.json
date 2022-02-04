@@ -1,0 +1,153 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "userauth": [
+    {
+      "id": 1,
+      "name": "mishra",
+      "email": "mukesh@gmail.com",
+      "password": "admin"
+    },
+    {
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 2
+    },
+    {
+      "name": "sonal",
+      "email": "sonal@gmail.com",
+      "password": "admin",
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "firstname": "dilip",
+      "lastname": "sinha",
+      "mobile": "1231413411",
+      "email": "dilip@test.com",
+      "password": "admin",
+      "id": 5
+    },
+    {
+      "firstname": "mukesh",
+      "lastname": "mishrra",
+      "mobile": "1234141341",
+      "email": "mukesh@test.com",
+      "password": "12345",
+      "id": 6
+    },
+    {
+      "firstname": "Sonamm",
+      "lastname": "Kapoor",
+      "mobile": "1234561234",
+      "email": "sonam@test.com",
+      "password": "sonal",
+      "id": 7
+    },
+    {
+      "firstname": "poojaa",
+      "lastname": "Das",
+      "mobile": "123141231",
+      "email": "poojaa@test.com",
+      "password": "12345",
+      "id": 8
+    },
+    {
+      "firstname": "kajal",
+      "lastname": "mehera",
+      "mobile": "2342431423",
+      "email": "kajal@test.com",
+      "password": "12345",
+      "id": 9
+    },
+    {
+      "firstname": "mukesh",
+      "lastname": "mishraa",
+      "mobile": "3298438384",
+      "email": "mm@example.com",
+      "password": "admin",
+      "id": 10
+    },
+    {
+      "firstname": "mukesh",
+      "lastname": "rana",
+      "mobile": "3298438384",
+      "email": "mmm@example.com",
+      "password": "admin",
+      "id": 11
+    },
+    {
+      "firstname": "mukesh",
+      "lastname": "sena",
+      "mobile": "3298438384",
+      "email": "mmmm@example.com",
+      "password": "admin",
+      "id": 12
+    },
+    {
+      "firstname": "mahesh",
+      "lastname": "mishraa",
+      "mobile": "3298438384",
+      "email": "mahesh@example.com",
+      "password": "admin",
+      "id": 13
+    },
+    {
+      "firstname": "mira",
+      "lastname": "mishraa",
+      "mobile": "3298438384",
+      "email": "mire@example.com",
+      "password": "admin",
+      "id": 14
+    },
+    {
+      "firstname": "mita",
+      "lastname": "mishraa",
+      "mobile": "3298438384",
+      "email": "mita@example.com",
+      "password": "admin",
+      "id": 15
+    },
+    {
+      "firstname": "monika",
+      "lastname": "mishraa",
+      "mobile": "3298438384",
+      "email": "monika@example.com",
+      "password": "admin",
+      "id": 16
+    },
+    {
+      "firstname": "harry",
+      "lastname": "mishraa",
+      "mobile": "3298438384",
+      "email": "hary@example.com",
+      "password": "admin",
+      "id": 17
+    },
+    {
+      "firstname": "shinaz",
+      "lastname": "mishraa",
+      "mobile": "3298438384",
+      "email": "sinaz@example.com",
+      "password": "admin",
+      "id": 18
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

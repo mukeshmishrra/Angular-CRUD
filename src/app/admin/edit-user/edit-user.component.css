@@ -1,0 +1,27 @@
+.primary-bg {
+    background-color: rgb(17, 97, 86);
+    color: white;
+  }
+  
+  .form-shadow {
+    background-color: rgba(144, 180, 180, 0.226);
+    box-shadow: 20px 20px 50px grey;
+  }
+  
+  /* error display */
+  .error-msg {
+    color: rgb(233, 41, 41);
+    font-size: medium;
+    font-weight: bold;
+  }
+  
+  .success-msg {
+    color: rgb(48, 168, 48);
+  }
+  
+  .card {
+    width: 40rem;
+    font-size: large;
+    margin-top: 80px;
+  }
+  
