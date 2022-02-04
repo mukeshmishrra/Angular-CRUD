@@ -1,27 +1,51 @@
-# UserManagement
+# Developer: Mukesh Mishra 
+# full stack web developer
+_______________________________________________________________________________________________________________________________________________
+                                                 ############ USER MANAGEMENT WEB APP  ############################
+Project name: Angular crud with fully features : create, update , table data view, delete data etc.
+in this project there more advance features is also avilabled : searching (filter by name),  applied pagination also.
+i used json server in this project (run command: json-server --watch db.json)
+ you can learn different concept by this project :
+      1. implementation of reactive form  with proper validation.
+      2. implementation of http client to access and get coming data from server or from     webservices.
+      3. implementation of real time advanced feature like filter or search , and pagination concept also.
+      4. implementation login and logout form designing and implementation fundamental each and every thing.
+      5. implimentation of how to protect url : what i mean that like if you are not logged in then could not get the access of admin dashbord and other url.
+      6. if you want to visit dashboard and perform something then you must go through the login page with valid credentials.
+      7. implementation of route gaurd and url protection.
+      many more concept u can learn by the project i am gonna mention each and every feature.
+# Note: ***please visit this project and explore and learn more things. this is the main aim to create this project
+_________________________________________________________________________________________________________________________________________________________
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
-## Development server
+ Project Overview 
+1. Add new record:
+image:
+![Screenshot (21)](https://user-images.githubusercontent.com/88608361/152601564-5dcf6ec6-7a86-4a9c-abd4-5685d8157271.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+2. table data view
+image:
 
-## Code scaffolding
+![Screenshot (23)](https://user-images.githubusercontent.com/88608361/152601829-7dd5552d-66a3-459a-b14a-737b77815820.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. table with filter 
+image:
+![Screenshot (24)](https://user-images.githubusercontent.com/88608361/152602091-587b545c-cb66-4fd0-b398-172935d56dce.png)
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+4. Delete- feature
+when u press click on delete button it will successfully delete the record and it will show the delete success message for 3 second and then message will hide automatically
+![Screenshot (27)](https://user-images.githubusercontent.com/88608361/152601021-731dcceb-5c2f-40bc-8d17-31ad4594098f.png)
 
-## Running unit tests
+5.login form 
+image:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Screenshot (28)](https://user-images.githubusercontent.com/88608361/152602236-0605adb2-e45c-4e9f-a879-e5d41c4294f4.png)
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+__________________________________________________________________________________________________________________________________________________________________
+thanks to visit my github account 
+hopefully this project will help you more to explore angular concepts very well with full of practical and implementation.
+dev.
+# mukesh mishra 
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
